@@ -450,10 +450,16 @@ button, input, textarea { font: inherit; }
 .inner-hero.dark .copy::after { background: transparent; }
 .inner-hero.dark .image { display: none; }
 .page-title {
-  margin: 0 0 20px;
+  margin: 0 0 26px;
   font-size: clamp(58px, 8vw, 94px);
+  line-height: .98;
+  letter-spacing: -0.03em;
 }
-.page-title span { color: var(--orange); }
+
+.page-title span {
+  display: block;
+  color: var(--orange);
+}
 .page-kicker {
   margin: 0 0 20px;
   font-size: clamp(26px, 3.2vw, 38px);
@@ -499,7 +505,14 @@ button, input, textarea { font: inherit; }
   gap: 34px;
   align-items: center;
 }
+
+.leader-card-text-only {
+  grid-template-columns: 1fr;
+  max-width: 430px;
+}
+
 .leader-card img { height: 290px; object-fit: cover; }
+
 .leader-name { font-size: 34px; }
 .signature {
   font-family: "Brush Script MT", "Segoe Script", cursive;
