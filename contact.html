@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | EB Construction</title>
+  <meta name="description" content="Contact EB Construction for construction enquiries, quotes and project discussions in Gauteng.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- Replace assets/logos/logo.png with the client supplied transparent logo. -->
+      <a class="logo-link" href="index.html" aria-label="EB Construction Home">
+        <img src="assets/logos/logo.png" alt="EB Construction logo">
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="">Home</a>
+      <a href="about.html" class="">About Us</a>
+      <a href="services.html" class="">Services</a>
+      <a href="projects.html" class="">Projects</a>
+      <a href="partners.html" class="">Partners</a>
+      <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+27788728844"><span class="phone-icon">☎</span>078 872 8844</a>
+        <a class="btn btn-primary" href="contact.html#quote">Request a Quote</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <section class="inner-hero">
+    <div class="inner-hero-grid">
+      <div class="copy">
+        <h1 class="page-title">Contact <span>Us</span></h1>
+        <p class="page-kicker">Let’s build something great together.</p>
+        <p>Have a project in mind? Need expert advice or a quote? Our team is ready to help. Get in touch with EB Construction today.</p>
+      </div>
+      <div class="image">
+        <!-- Page hero image. Replace this file with the supplied image for the page. -->
+        <img src="assets/images/hero-contact.jpg" alt="EB Construction contact page image">
+      </div>
+    </div>
+  </section>
+
+
+    <section class="section-pad" style="padding-bottom:42px">
+      <div class="container">
+        <h2 class="section-title rule-title">Get In Touch</h2>
+        <div class="contact-methods">
+          <div class="contact-method"><span class="contact-icon">☎</span><strong>Phone</strong><a href="tel:+27788728844">078 872 8844</a></div>
+          <div class="contact-method"><span class="contact-icon">✉</span><strong>Email</strong><a href="mailto:ben@ebgroup.co.za">ben@ebgroup.co.za</a></div>
+          <div class="contact-method"><span class="contact-icon">⌖</span><strong>Address</strong><span>44 Drysdale Road, Sundowner, Randburg, 2190</span></div>
+          <div class="contact-method"><span class="contact-icon">◎</span><strong>Website</strong><span>www.ebgroup.co.za</span></div>
+          <div class="contact-method"><span class="contact-icon">◷</span><strong>Business Hours</strong><span>Monday – Friday<br>7:30am – 5:00pm</span><br><small>Saturday – By Appointment</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="quote">
+      <div class="contact-layout">
+        <div class="contact-form-panel">
+          <h2 class="section-title">Send Us <span class="orange">A Message</span></h2>
+          <p>Fill in the form below and we’ll get back to you as soon as possible.</p>
+
+          <!-- Web3Forms setup:
+               1. Create a free Web3Forms access key.
+               2. Replace YOUR_WEB3FORMS_ACCESS_KEY_HERE below with the real key.
+               3. The form will send enquiries to the email linked to that key. -->
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+            <input type="hidden" name="subject" value="New EB Construction website enquiry">
+            <input type="hidden" name="from_name" value="EB Construction Website">
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone">
+            <input type="text" name="project_subject" placeholder="Project / Subject">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+          <p class="form-note">Backup options:</p>
+          <div class="backup-actions">
+            <a class="btn btn-outline" href="https://wa.me/27788728844" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-outline" href="mailto:ben@ebgroup.co.za">Email Us</a>
+          </div>
+        </div>
+        <div class="map-panel">
+          <h2 class="section-title">Where We <span class="orange">Operate</span></h2>
+          <p>Proudly based in Gauteng and delivering construction solutions across the region.</p>
+          <!-- Replace this with a real map screenshot/image if supplied. -->
+          <img src="assets/images/map-gauteng.jpg" alt="Gauteng service area map">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container why-grid">
+        <div class="why-item"><span class="why-icon">☆</span><div><h3>20+ Years Experience</h3><p>Reliable industry knowledge and hands-on leadership.</p></div></div>
+        <div class="why-item"><span class="why-icon">✓</span><div><h3>Quality Workmanship</h3><p>Professional standards and attention to detail.</p></div></div>
+        <div class="why-item"><span class="why-icon">🤝</span><div><h3>Reliable & On Time</h3><p>Committed to clear timelines and proper communication.</p></div></div>
+        <div class="why-item"><span class="why-icon">▣</span><div><h3>Safety Focused</h3><p>Safety-conscious work across every project phase.</p></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2025 EB Construction. All rights reserved.</span>
+      <div class="socials" aria-label="Social media links">
+        <!-- Replace # with real social links when available. -->
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Instagram">◎</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
