@@ -547,7 +547,16 @@ button, input, textarea { font: inherit; }
 .mv-item:last-child { border-right: 0; }
 .mv-icon { font-size: 42px; color: var(--orange); }
 .mv-item:nth-child(2) .mv-icon { color: var(--green); }
-.mv-sign { font-family: "Brush Script MT", cursive; font-size: 42px; line-height: .9; }
+.mv-sign {
+  font-family: "Brush Script MT", cursive;
+  font-size: 42px;
+  line-height: .9;
+  margin: 0 0 8px;
+}
+
+.mv-item .section-title {
+  line-height: .92;
+}
 
 /* Services */
 .services-list { background: var(--white); }
