@@ -819,6 +819,103 @@ button, input, textarea { font: inherit; }
   .cta-strip { background: var(--black); }
   .cta-inner { grid-template-columns: 1fr; gap: 22px; }
   .footer-inner { flex-direction: column; text-align: center; }
+    /* Services hero mobile fix */
+  .inner-hero.dark .inner-hero-grid,
+  .inner-hero.dark.services-hero .inner-hero-grid {
+    grid-template-columns: 1fr;
+    min-height: 560px;
+    background-position: center right;
+  }
+
+  .inner-hero.dark .copy {
+    width: 100%;
+    max-width: 100%;
+    padding: 52px 28px 56px;
+  }
+
+  .inner-hero.dark .page-title {
+    font-size: clamp(52px, 15vw, 72px);
+    line-height: .95;
+    margin-bottom: 26px;
+  }
+
+  .inner-hero.dark .page-kicker {
+    max-width: 330px;
+    font-size: 20px;
+    line-height: 1.08;
+    margin-bottom: 24px;
+  }
+
+  .inner-hero.dark .copy p:not(.page-kicker) {
+    max-width: 340px;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+    /* Mobile: show normal inner page hero text over image */
+  .inner-hero:not(.dark) .inner-hero-grid {
+    position: relative;
+    display: block;
+    min-height: 560px;
+    overflow: hidden;
+  }
+
+  .inner-hero:not(.dark) .image {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .inner-hero:not(.dark) .image img {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    object-fit: cover;
+  }
+
+  .inner-hero:not(.dark) .copy {
+    position: relative;
+    z-index: 2;
+    min-height: 560px;
+    width: 100%;
+    max-width: 100%;
+    padding: 54px 28px 56px;
+    color: var(--white);
+    background: linear-gradient(
+      90deg,
+      rgba(0,0,0,.84) 0%,
+      rgba(0,0,0,.62) 48%,
+      rgba(0,0,0,.18) 100%
+    );
+    justify-content: center;
+  }
+
+  .inner-hero:not(.dark) .copy::after {
+    display: none;
+  }
+
+  .inner-hero:not(.dark) .page-title {
+    color: var(--white);
+    font-size: clamp(52px, 15vw, 72px);
+    line-height: .95;
+  }
+
+  .inner-hero:not(.dark) .page-title span {
+    color: var(--orange);
+  }
+
+  .inner-hero:not(.dark) .page-kicker {
+    max-width: 330px;
+    color: var(--white);
+    font-size: 20px;
+    line-height: 1.08;
+  }
+
+  .inner-hero:not(.dark) .copy p:not(.page-kicker) {
+    max-width: 340px;
+    color: var(--white);
+    font-size: 18px;
+    line-height: 1.45;
+  }
 }
 
 @media (max-width: 620px) {
@@ -844,4 +941,88 @@ button, input, textarea { font: inherit; }
   .contact-method { border-right: 0; }
   .rule-title::before, .rule-title::after { width: 36px; }
   .map-panel, .contact-form-panel, .story-copy, .panel { padding: 30px 22px; }
+  /* Partners page: improve commitment heading and cards on mobile */
+  .commitment-title {
+    display: block;
+    text-align: center;
+    font-size: clamp(30px, 9vw, 42px);
+    line-height: .95;
+    margin-bottom: 26px;
+  }
+
+  .commitment-title::before,
+  .commitment-title::after {
+    display: none;
+  }
+
+  .commitment-title .orange {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .commitment-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: start;
+    gap: 14px;
+    padding: 26px 22px;
+  }
+
+  .commitment-icon {
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  .commitment-item h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    line-height: 1.1;
+  }
+
+  .commitment-item p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+    /* Services hero small-phone refinement */
+  .inner-hero.dark.services-hero .inner-hero-grid {
+    min-height: 620px;
+    background-position: 68% center;
+  }
+
+  .inner-hero.dark .copy {
+    padding: 44px 26px 52px;
+  }
+
+  .inner-hero.dark .page-kicker {
+    max-width: 310px;
+    font-size: 18px;
+  }
+
+  .inner-hero.dark .copy p:not(.page-kicker) {
+    max-width: 310px;
+    font-size: 17px;
+  }
+
+    /* Small phone refinement for image hero pages */
+  .inner-hero:not(.dark) .inner-hero-grid,
+  .inner-hero:not(.dark) .copy,
+  .inner-hero:not(.dark) .image img {
+    min-height: 620px;
+  }
+
+  .inner-hero:not(.dark) .copy {
+    padding: 48px 26px 52px;
+  }
+
+  .inner-hero:not(.dark) .page-kicker {
+    max-width: 310px;
+    font-size: 18px;
+  }
+
+  .inner-hero:not(.dark) .copy p:not(.page-kicker) {
+    max-width: 310px;
+    font-size: 17px;
+  }
 }
