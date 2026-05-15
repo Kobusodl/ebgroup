@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | EB Construction</title>
+  <meta name="description" content="View EB Construction project gallery photos from residential, commercial and civil construction work across Gauteng.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo-link" href="index.html" aria-label="EB Construction Home">
+        <img src="assets/logos/logo.png" alt="EB Construction logo">
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About Us</a>
+        <a href="services.html" class="">Services</a>
+        <a href="projects.html" class="">Projects</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="partners.html" class="">Partners</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+27788728844"><span class="phone-icon">☎</span>078 872 8844</a>
+        <a class="btn btn-primary" href="contact.html#quote">Request a Quote</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="inner-hero">
+      <div class="inner-hero-grid">
+        <div class="copy">
+          <h1 class="page-title">Project <span>Gallery</span></h1>
+          <p class="page-kicker">Real work. Real projects.</p>
+          <p>Browse a selection of EB Construction project photos, including residential, commercial, civil and site work completed across Gauteng.</p>
+        </div>
+        <div class="image">
+          <!-- You can replace this later with assets/images/hero-gallery.jpg if preferred. -->
+          <img src="assets/images/hero-projects.jpg" alt="EB Construction project gallery hero image">
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">EB Construction Gallery</p>
+          <h2 class="section-title">Project Photos</h2>
+          <p class="gallery-intro">
+            A visual look at completed work, construction progress, site preparation and project delivery.
+          </p>
+        </div>
+
+        <!-- The gallery is generated from the image list in the script below. -->
+        <div class="gallery-grid" id="galleryGrid" aria-label="Project gallery"></div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="container cta-inner">
+        <div>
+          <h2 class="footer-heading">Let’s build something <span class="green">great.</span></h2>
+          <p>Get in touch with us today to discuss your next project.</p>
+        </div>
+        <div class="cta-contact">
+          <span>☎ <a href="tel:+27788728844">078 872 8844</a></span>
+          <span>✉ <a href="mailto:ben@ebgroup.co.za">ben@ebgroup.co.za</a></span>
+          <span>⌖ 44 Drysdale Road, Sundowner, Randburg, 2190</span>
+        </div>
+        <a class="btn btn-black" href="contact.html#quote">Contact Us</a>
+      </div>
+    </section>
+
+    <section class="stats-band" aria-label="Company highlights">
+      <div class="container stats-grid">
+        <div class="stat">
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="4" width="18" height="17" rx="2"></rect>
+              <path d="M8 2v4M16 2v4M3 10h18"></path>
+            </svg>
+          </div>
+          <div><strong>Established</strong><small>2009</small></div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="9" cy="8" r="3"></circle>
+              <path d="M4 18c0-3 3-5 5-5s5 2 5 5"></path>
+              <path d="M16 11a3 3 0 1 0 0-6"></path>
+              <path d="M20 18c0-2-1.2-3.7-3-4.6"></path>
+            </svg>
+          </div>
+          <div><strong>20+ Years</strong><small>Experience</small></div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11Z"></path>
+              <circle cx="12" cy="10" r="2.5"></circle>
+            </svg>
+          </div>
+          <div><strong>Gauteng</strong><small>Based</small></div>
+        </div>
+        <div class="stat">
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 20V8h8v12"></path>
+              <path d="M12 20V4h8v16"></path>
+              <path d="M7 11h1M7 14h1M7 17h1M15 8h1M15 11h1M15 14h1M15 17h1"></path>
+            </svg>
+          </div>
+          <div><strong>Residential</strong><small>Commercial | Civil</small></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="gallery-lightbox" data-gallery-lightbox aria-hidden="true">
+  <button class="gallery-lightbox-close" type="button" data-close-gallery aria-label="Close gallery image">×</button>
+  <button class="gallery-lightbox-bg" type="button" data-close-gallery aria-label="Close gallery image"></button>
+
+  <button class="gallery-lightbox-nav gallery-lightbox-prev" type="button" data-gallery-prev aria-label="Previous gallery image">‹</button>
+  <button class="gallery-lightbox-nav gallery-lightbox-next" type="button" data-gallery-next aria-label="Next gallery image">›</button>
+
+  <div class="gallery-lightbox-content">
+    <img alt="" data-lightbox-image>
+    <div class="gallery-lightbox-meta">
+      <p data-lightbox-caption></p>
+      <span data-lightbox-counter></span>
+    </div>
+  </div>
+</div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2025 EB Construction. All rights reserved.</span>
+      <div class="socials" aria-label="Social media links">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Instagram">◎</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+  <script>
+  const galleryImages = Array.from({ length: 48 }, function (_, index) {
+    const number = String(index + 1).padStart(2, "0");
+
+    return {
+      src: `assets/images/gallery/gallery-${number}.jpeg`,
+      title: `EB Construction project`
+    };
+  });
+
+  const galleryGrid = document.getElementById("galleryGrid");
+  const lightbox = document.querySelector("[data-gallery-lightbox]");
+  const lightboxImage = document.querySelector("[data-lightbox-image]");
+  const lightboxCaption = document.querySelector("[data-lightbox-caption]");
+  const lightboxCounter = document.querySelector("[data-lightbox-counter]");
+  const prevButton = document.querySelector("[data-gallery-prev]");
+  const nextButton = document.querySelector("[data-gallery-next]");
+
+  let currentGalleryIndex = 0;
+  let lastFocusedGalleryCard = null;
+
+  if (galleryGrid) {
+    galleryGrid.innerHTML = galleryImages.map(function (image, index) {
+      const featuredClass = index % 9 === 0 ? " gallery-featured" : "";
+
+      return `
+        <button class="gallery-card${featuredClass}" type="button" data-index="${index}" aria-label="Open ${image.title}">
+          <img src="${image.src}" alt="${image.title}" loading="lazy">
+        </button>
+      `;
+    }).join("");
+  }
+
+  if (galleryGrid && lightbox && lightboxImage && lightboxCaption && lightboxCounter) {
+    galleryGrid.addEventListener("click", function (event) {
+      const card = event.target.closest("[data-index]");
+
+      if (!card) return;
+
+      openGallery(Number(card.dataset.index));
+    });
+
+    document.querySelectorAll("[data-close-gallery]").forEach(function (button) {
+      button.addEventListener("click", closeGallery);
+    });
+
+    if (prevButton) {
+      prevButton.addEventListener("click", function () {
+        showGalleryImage(-1);
+      });
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener("click", function () {
+        showGalleryImage(1);
+      });
+    }
+
+    document.addEventListener("keydown", function (event) {
+      if (!lightbox.classList.contains("is-open")) return;
+
+      if (event.key === "Escape") {
+        closeGallery();
+      }
+
+      if (event.key === "ArrowLeft") {
+        showGalleryImage(-1);
+      }
+
+      if (event.key === "ArrowRight") {
+        showGalleryImage(1);
+      }
+    });
+  }
+
+  function openGallery(index) {
+    currentGalleryIndex = index;
+    lastFocusedGalleryCard = document.activeElement;
+
+    const image = galleryImages[currentGalleryIndex];
+
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.title;
+    lightboxCaption.textContent = image.title;
+    lightboxCounter.textContent = `${currentGalleryIndex + 1} / ${galleryImages.length}`;
+
+    lightbox.classList.add("is-open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function showGalleryImage(direction) {
+    currentGalleryIndex = currentGalleryIndex + direction;
+
+    if (currentGalleryIndex < 0) {
+      currentGalleryIndex = galleryImages.length - 1;
+    }
+
+    if (currentGalleryIndex >= galleryImages.length) {
+      currentGalleryIndex = 0;
+    }
+
+    openGallery(currentGalleryIndex);
+  }
+
+  function closeGallery() {
+    if (document.activeElement && lightbox.contains(document.activeElement)) {
+      document.activeElement.blur();
+    }
+
+    lightbox.classList.remove("is-open");
+    lightbox.setAttribute("aria-hidden", "true");
+    lightboxImage.removeAttribute("src");
+    lightboxCaption.textContent = "";
+    lightboxCounter.textContent = "";
+    document.body.style.overflow = "";
+
+    if (lastFocusedGalleryCard && typeof lastFocusedGalleryCard.focus === "function") {
+      lastFocusedGalleryCard.focus();
+    }
+  }
+</script>
+</body>
+</html>
