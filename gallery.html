@@ -156,7 +156,16 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-  const galleryImages = Array.from({ length: 48 }, function (_, index) {
+  const newGalleryImages = Array.from({ length: 24 }, function (_, index) {
+    const number = String(index + 1).padStart(2, "0");
+
+    return {
+      src: `assets/images/gallery/gallery-new-${number}.jpeg`,
+      title: `EB Construction project`
+    };
+  });
+
+  const existingGalleryImages = Array.from({ length: 48 }, function (_, index) {
     const number = String(index + 1).padStart(2, "0");
 
     return {
@@ -164,6 +173,8 @@
       title: `EB Construction project`
     };
   });
+
+  const galleryImages = [...newGalleryImages, ...existingGalleryImages];
 
   const galleryGrid = document.getElementById("galleryGrid");
   const lightbox = document.querySelector("[data-gallery-lightbox]");
